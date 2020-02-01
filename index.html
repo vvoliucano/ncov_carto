@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <style>
+
+  .chart .background {
+    fill: #ddd;
+    /* stroke: #777; */
+  }
+  /* .chart .foreground.selected {
+    fill: #41b6c4;
+    opacity: 1;
+  } */
+  .chart .foreground {
+    fill: #41b6c4;
+    opacity: 1;
+  }
+
+  .province_number {
+    text-shadow: -2px -2px white, 2px 2px #F6978E
+  }
+
+  text{
+    fill: #777;
+    font-family: PingFangSC-Regular, Khand-Regular
+  }
+
+
+  .hexTooltip {
+    position: absolute;
+    display: none;
+    pointer-events: none;
+    background: #fff;
+    padding: 5px;
+    text-align: left;
+    border: solid #ccc 1px;
+    color: #666;
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  .kuang {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .fix_hex.highlight path{
+    stroke:#41b6c4;
+    stroke-width: 2
+  }
+
+  .hex.highlight path{
+    stroke: #41b6c4;
+    stroke-width: 2
+  }
+
+  .box.highlight rect{
+    stroke: #41b6c4;
+    stroke-width: 2
+  }
+
+  .fix_hex path{
+    fill-opacity: 0.2;
+  }
+
+  .hex path{
+    fill-opacity: 0.2;
+
+  }
+
+  .box rect{
+    fill-opacity: 0.2;
+  }
+
+  .fix_hex.selected path{
+    stroke-width: 2;
+    fill-opacity: 0.8;
+  }
+
+  .hex.selected path{
+    stroke-width: 2;
+    fill-opacity: 0.8;
+  }
+
+  .box.selected rect{
+    stroke-width: 2;
+    fill-opacity: 0.8;
+  }
+
+
+  </style>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+    <div id = "map"  style="position: absolute; top: 1%; left: 1%; width: 98%; height: 100%; margin: 0px; padding: 0px; ">
+    </div>
+<!--
+		<div id="legendholder">
+		  <button id="click_to_run" onclick="do_update()">View by Population</button>
+		  <button id="click_to_normal" onclick="do_normal()">View Normal</button>
+		</div> -->
+
+		<div id="map-wrapper"></div>
+
+		<script src="d3.min.js"></script>
+		<script src="topojson.js"></script>
+		<script src="cartogram.js"></script>
+    <!-- <script src="global.js"></script> -->
+    <!-- <script src="chart.js"></script> -->
+    <!-- <script src="update_all.js"></script> -->
+    <script src="map.js"></script>
+
+	</body>
+</html>
